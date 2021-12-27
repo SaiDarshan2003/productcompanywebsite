@@ -3,19 +3,156 @@
   <head>
     <title>EduSoft Private Limited</title>
     <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
+    <link rel="icon" href="./img/globee.png" type="image/x-icon" />
   </head>
+ <body>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color:black;
+  color:purple;
+}
+.container {
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  box-shadow: 15px 15px 8px black;
+}
 
-  <body>
+.banner {
+  display: block;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  font-size: 60px;
+  background-image:"lo.jpg";
+  background-size: 100% 100%;
+  margin: 0px 0px 0px 0px;
+  padding-top: 150px;
+  color: yellow;
+}
+
+.menu {
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: larger;
+  background-color: darkblue;
+  text-align: center;
+  padding-top: 15px;
+  margin: 0px 0px 0px 0px;
+  border-width: 1px;
+}
+
+.menuitem {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.menuitemselected {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: purple;
+}
+
+.menuitem a {
+  text-decoration: none;
+  color: #f8c0f1;
+}
+
+.content {
+  display: block;
+  width: 100%;
+  background-color: #f8c0f1;
+  min-height: 500px;
+  margin: 0px 0px 0px 0px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+.homecontent {
+  min-height: 500px;
+  margin: 10px 10px 10px 10px;
+}
+.homecontent h1 {
+  text-align: left;
+}
+.homecontent img {
+  float: right;
+  width: 400px;
+  height: 300px;
+  margin-left: 10px;
+}
+
+.contenttext {
+  text-align: justify;
+  color:purple;
+}
+
+.productcontent {
+  min-height: 500px;
+  margin: 10px 10px 10px 10px;
+}
+
+.productcontent h1 {
+  text-align: left;
+}
+
+.productitems {
+  display: block;
+}
+
+.productitem {
+  display: inline-block;
+  width: 30%;
+  height: 250px;
+  text-align: center;
+}
+
+.productitem img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+.productitem .itemimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.productitem .itemname {
+  display: block;
+}
+.productitem .itemprice {
+  display: block;
+}
+
+.footer {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: darkblue;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0px 0px 0px 0px;
+  color: white;
+}
+</style>
     <div class="container">
       <div class="banner">EduSoft Private Limited.</div>
       <div class="menu">
-        <div class="menuitem"><a href="/static/home.html">Home</a></div>
-        <div class="menuitemselected">
-          <a href="/static/products.html">Products</a>
-        </div>
-        <div class="menuitem"><a>People</a></div>
-        <div class="menuitem"><a>Contact Us</a></div>
+        <div class="menuitem"><a href="home.html">Home</a></div>
+        <div class="menuitemselected"><a href="products.html">Products</a></div>  
+        <div class="menuitem"><a href="contact.html">People</a></div>
+        <div class="menuitem"><a href="address.html">Contact Us</a></div>
       </div>
       <div class="content">
         <div class="productcontent">    
@@ -23,23 +160,93 @@
           <div class="productitems">
               <div class="productitem"> 
                   <div class="itemimage">
-                  <img src="/static/img/tally_gold.png" alt="product image">
+                  <img src="g.jpg" alt="product image">
                   </div>
                   <div class="itemname">Tally Gold</div>
                   <div class="itemprice">Price: Rs.40,000.00 </div>
               </div>
               <div class="productitem"> 
                   <div class="itemimage">
-                  <img src="/static/img/tally_silver.png"  alt="product image">
+                  <img src="s.jpg"  alt="product image">
                   </div>
                   <div class="itemname">Tally Silver</div>
                   <div class="itemprice">Price: Rs.10,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                <div class="itemimage">
+                <img src="se.png" alt="product image">
+                </div>
+                <div class="itemname">Total Security</div>
+                <div class="itemprice">Price: Rs.3,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                <div class="itemimage">
+                <img src="a.jpg" alt="product image">
+                </div>
+                <div class="itemname">Antivirus Pro</div>
+                <div class="itemprice">Price: Rs.3,500.00 </div>
+              </div>
+              <div class="productitem"> 
+                <div class="itemimage">
+                <img src="i.jfif" alt="product image">
+                </div>
+                <div class="itemname">Internet Security</div>
+                <div class="itemprice">Price: Rs.4,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                <div class="itemimage">
+                <img src="as.jpg" alt="product image">
+                </div>
+                <div class="itemname">Antivirus Server edition</div>
+                <div class="itemprice">Price: Rs.5,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                <div class="itemimage">
+                <img src="0.jpg" alt="product image">
+                </div>
+                <div class="itemname">Tally</div>
+                <div class="itemprice">Price: Rs.3,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                <div class="itemimage">
+                <img src="1.jpg" alt="product image">
+                </div>
+                <div class="itemname">Tally 1</div>
+                <div class="itemprice">Price: Rs.3,700.00 </div>
+              </div>
+              <div class="productitem"> 
+                <div class="itemimage">
+                <img src="2.jpg" alt="product image">
+                </div>
+                <div class="itemname">Tally 2</div>
+                <div class="itemprice">Price: Rs.4,000.00 </div>
+              </div>
+              <div class="productitem"> 
+                <div class="itemimage">
+                <img src="e.jfif" alt="product image">
+                </div>
+                <div class="itemname">Engineering</div>
+                <div class="itemprice">Price: Rs.400.00 </div>
+              </div>
+              <div class="productitem"> 
+                <div class="itemimage">
+                <img src="p.png" alt="product image">
+                </div>
+                <div class="itemname">Python for DS</div>
+                <div class="itemprice">Price: Rs.600.00 </div>
+              </div>
+              <div class="productitem"> 
+                <div class="itemimage">
+                <img src="sf.jpg" alt="product image">
+                </div>
+                <div class="itemname">software applications</div>
+                <div class="itemprice">Price: Rs.1000.00 </div>
               </div>
           </div>
           </div>        
       </div>
       <div class="footer">
-        Copyright &#169; 2021 EduSoft Private Limited, Developed by Obed Otto.
+        Copyright &#169; 2021 EduSoft Private Limited, Developed by Sai Darshan
       </div>
     </div>
   </body>
